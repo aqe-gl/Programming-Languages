@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-ol {
-    font-size: 18px;
+body {
+    background-color: rgb(42, 82, 190);
+    color:azure;
 }
 
-.python {
+ol {
+    font-size: 19.5px;
+}
+
+ul {
+    font-size: 19px;
+}
+
+.links {
     color: rgb(0, 0, 0);
     font-size: 30px;
     font-family: "Bebas Neue", sans-serif;
