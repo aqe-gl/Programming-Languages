@@ -1,16 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Special+Gothic+Condensed+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik+Mono+One&family=Special+Gothic+Condensed+One&display=swap');
 
 body {
-    background-color: rgb(42, 82, 190);
-    color:azure;
+    /* Sets animation, 10 second gradient shift*/
+    animation: gradientShift 10s ease infinite;
+    /* four colours gradient*/
+    background: linear-gradient(-45deg, #032e72, #4476ff, #ff6b6b, #ffe66d);
+    /* background 4x larger to give illusion of movement*/   
+    background-size: 400% 400%;
+    color: azure;
+    height: 130vh;
+    margin: 0;
 }
 
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+        /*background positioned horizontally*/
+    }
+    50% {
+        background-position: 100% 50%;
+        /*rotate to the right*/
+    }
+    100% {
+        background-position: 0% 50%;
+        /*back to starting position*/
+    }
+    
+}
+
+
+
 ol {
-    font-size: 19.5px;
+    font-size: 20.3px;
+    color: #31ac00;
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
 }
 
 ul {
     font-size: 19px;
+    color: #57bcff;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    list-style-type: '🛠';
 }
 
 .links {
@@ -20,3 +56,37 @@ ul {
     font-weight: 400;
     font-style: normal;
 }
+
+.jasc {
+    color: #3164ee;
+}
+
+.Java{
+    color: #1b4edd;
+}
+
+.cpp {
+    color: #1747ca
+}
+
+.CL {
+    color: #00227e
+}
+
+h3 {
+    color: black;
+    font-size: larger;
+}
+
+.h1 {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 450;
+    font-style: normal;;
+    font-size: xx-large;
+    text-shadow: 5px 5px 0px black ;
+}
+
+
+
